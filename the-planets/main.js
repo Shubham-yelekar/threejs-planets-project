@@ -66,7 +66,7 @@ let spheresMesh = []
 
 for(let i = 0; i< 4 ; i++){
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load(`./public/${textures[i]}`);
+  const texture = textureLoader.load(`./${textures[i]}`);
   texture.colorSpace = THREE.SRGBColorSpace;
 
   const geometry = new THREE.SphereGeometry(radius,segment,segment);
