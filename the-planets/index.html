@@ -5,11 +5,42 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Vite App</title>
   </head>
-  <body class="overflow-hidden">
-    <canvas id="canvas"></canvas>
+  <body>
+    <div class="w-full h-screen overflow-hidden">
+      <div class="w-full h-screen absolute top-0 left-0 z-[2] text-white ">
+
+        <nav class="w-full flex justify-between items-center py-8 px-8">
+          <h3>Planets</h3>
+          <div class=" flex  gap-8">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+        <div class="absolute top-[16%] left-1/2 -translate-x-1/2 text-center">
+
+          <div class="w-full h-[4em] lg:h-[7em] overflow-hidden">
+            <h1 class="heading h-full lg:text-9xl text-5xl leading-none tracking-tighter">EARTH</h1>
+            <h1 class="heading  h-full lg:text-9xl text-5xl leading-none tracking-tighter">CSILLA</h1>
+            <h1 class="heading h-full lg:text-9xl text-5xl leading-none tracking-tighter">VENUS</h1>
+            <h1 class="heading h-full lg:text-9xl text-5xl leading-none tracking-tighter">VOLCANIC</h1>
+          </div>
+          <!-- <p class="text-md ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus esse harum est delectus et. </p> -->
+          <div class=" h-px bg-gradient-to-r from-transparent via-white to-transparent mt-4"></div>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.15",
     "vite": "^5.4.10"
   },
   "dependencies": {
