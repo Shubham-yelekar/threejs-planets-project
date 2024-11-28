@@ -157,19 +157,19 @@ function throttleWheelHandler(event) {
 }
 
 // Initialize touch variables for mobile handling
-let lastTouchY = 0;
+let lastTouchX = 0;
 
 function handleTouchStart(event) {
-  lastTouchY = event.touches[0].clientY;
+  lastTouchX = event.touches[0].clientX;
 }
 
 function handleTouchMove(event) {
-  const currentTouchY = event.touches[0].clientY;
-  const deltaY = currentTouchY - lastTouchY;
-  lastTouchY = currentTouchY;
+  const currentTouchX = event.touches[0].clientX;
+  const deltaX = currentTouchX - lastTouchX;
+  lastTouchX = currentTouchX;
 
   // Simulate a "wheel" event for touch devices
-  throttleWheelHandler({ deltaY: -deltaY });
+  throttleWheelHandler({ deltaY: -deltaX });
 }
 
 // Add listeners for both desktop and mobile
